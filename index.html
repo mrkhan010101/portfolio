@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfolio website complete</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Altamash</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Altamash</span><br> Software
+                    Developer
+                </h1>
+
+                <a href="Resume.pdf" target="_blank" class="button">Resume</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/altamash01/" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/mrkhan010101" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="assets/img/Profile.png" alt="">
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/Profile2.png" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">I'am Altamash</h2>
+                    <p class="about__text">I am passionate about building excellent software that improves the lives of
+                        those around me. I specialize in creating software for clients ranging from individuals and
+                        small-businesses all the way to large enterprise corporations. What would you do if you had a
+                        software expert available at your fingertips?</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <p class="skills__text"> </p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABUklEQVRIS82UzU0DMRBGXyqADoAKAh3AGSHRAekAWqADxB0BJXDgDKKBQAfQAVQAemgdWRN71xuxEnNJpLW/5/nmZ8bEMZtYn38BOAXOgENgu8v4HXgFLrvfqhFDGewDz8AVcAFsBaVP4AAQWIwhgK++BY6AJ2C3oOI3H7ExQOG+GA3Q53mPYnytADP9Bu6jXdEixZcVK2rMZJ/f12oSAXddx4wZjxzgPbNYJIEIsBt2Rqh/ASfAS3ZHjb0aQB9jfFTaUKEb4BqwnfNYPTxmEAEP3QycZ0OWCymchq8JEC06Bh5HWOZRM17Ny1CRYwFbWL1FluyOSSthLOCtmwnb9TdKq0KIC05vHao4yUJrsbYyWnbRn6+K/HWugBIgWaGdDtXGyy7WJMH12Kl3hbuuBRVjyCIvCVHInve/tVHQlhZSfX2tyC2t2HymJYNmsdLByQE/5Ac/GXd2b54AAAAASUVORK5CYII=" />
+                            <span class="skills__name">Python</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABRUlEQVRIS9WVjS0FQRRGz6sAHegAFaACOkAHOkAFqIASqAAdUAEl6ICcZO7LZHZmdvclG3GTzSY7P2e+7965u2LhWC28P38CeAUON1T2Bhzla2sKFgc8AScbKngGTscUXANXadLxRNBLmncDuH4dNYtKgJb1Qs9nAc6Bh0yBgDtgr0HZBvbT2AXwOKYgP5EWCZia+JjftagmeRfwqYWKzwrFXYAbfbaSViHkOdsBvscscvwnTfoCfGpxD1jSeh4KBkXTahUB+AAuUxJvC0otP5MB76lq4urneQlOCfAwUU3dHDgYVSPoIM22HOOWak147XsLGPQh17UsystSi1wsLA9Pa1P0jhizAHllxKYmO261lpVlO2gTPQU1QKOY1p9nATydfnvSsc5qB1WZeRmU9NQ/WsB8m9RoH27ajamAsX2a4/8f8AvilEYZXJ2bVgAAAABJRU5ErkJggg==" />
+                            <span class="skills__name"> HTML & CSS</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">50%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABxUlEQVRIS7WVPy9nURCGn1+nQi0RREmyOq2tlEurwSfYVdGho5DdrZTLJ6BWEdGo+AZst4WERiER8si5NyfjuvfY5DfJzf03531n3pkzp0efrddnfD5DsAJspoC2gMOS4EoI5oCfwEwAvALWgNM2ojaC8QS80BHpAbAN3DT5NREMA9+BH4DPJXYP/AJ+Az7XFgmU4Qgw+tzU+xhQFk0/a/It+JnFYub3rsgCfMkWPQBK9JHO/lOiobTmMmUwX2HEDF5CRF+7ipgC2AUes0aocdsIlEUZKtsBloAnYA/YTzWyw3I//YsI1FLdNcHXQ3YXwNQHjVBEMJG13l9gNBGcA5PASHpfTdJYDy+DqpukTaKc4B9wBzwD0yGTisCOMmu70LVv1kaQS/SnQeezFHnVQTlvkUSxyM4fi+nmc1P5Xj0vh6w6Ca6BAWAjK3TAqF/VXVmKMjgBBoHZ5O22V+OqmyKJ4MqXjxSDqwdj06gQbCwg+c0de5u++1+54iD0v9+qkdJ4HhiNg86rqYBNUjlSrItX67DLF9vLLogDLRLYDBa8eFxHAA8cifIhqI9am+V/HziRSM2NVPNuTTqt5MjsBGlz6DvBK8w3VxnKheYUAAAAAElFTkSuQmCC" />
+                            <span class="skills__name">C & c++</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">50%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABeklEQVRIS+2U0TUEQRBF70aADIgAESADIkAEiAARIAJEgAiQAREgAkTAuXuqzulZ3bMzH77on93TXVPv1a3qnvDLa/LL+fl7AofAGfAA7AAf8xCPRbQWyReA1xB56hMZK2CuxRBZjcRWddESaQlsA5mg9a2JFXNdAUc1ZDUBP3qfx7ZyLqp9oIOsrwJ555qt6DEweb4M7EagTd8qRYb04AQ4jgSfgGJO0SbwBTyHiHs2X5GVxNUnIKqbSJSVpLtyP6fJ+PsIPAU01rzJ4jE4m2jsWzjNu1C24S4qk7/D4e96S2A2gVgsXe5iKZGlSJ6JaSM2p3RKRLq9DCeemdiEjmCO7FJUpUNFc3mrTf5SVP1DoFS3cTZTvgrklPjfUdSMlbpuA0kZl8g6Fdh9XV3Hx/nOWEU2LxPaxJx3x9T3SUPlMGi4I2CgzmpvyzlwULlctS0N7uXBkHuQsUNEOsn7xrRlVly6E0c22WEQhwamWMo1poKBhP4FRoL6BiunTRmJ1Q+CAAAAAElFTkSuQmCC" />
+                            <span class="skills__name">Blender</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <div class="work__container bd-grid">
+                <div class="work__img">
+                <p><a href="https://github.com/mrkhan010101/Lane-Detection-and-Pedestrian-Tracking">
+                    <img src="assets/img/Work1.1.jpg" alt="">
+                    </a></p>
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work2.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work3.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work4.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work5.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/work6.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" placeholder="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Submit" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Altamash</p>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=100009104147093" target="_blank" class="footer__icon"><i
+                    class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/al_tamashh/?hl=en" target="_blank" class="footer__icon"><i
+                    class='bx bxl-instagram'></i></a>
+            <a href="https://twitter.com/Alfmashh" target="_blank" class="footer__icon"><i
+                    class='bx bxl-twitter'></i></a>
+        </div>
+        <p></p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
